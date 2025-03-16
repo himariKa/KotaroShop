@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  xampp:
+    build: .
+    ports:
+      - "9000:80"
+    volumes:
+      - ./src:/opt/lampp/htdocs
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_HOST=localhost
