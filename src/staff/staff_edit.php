@@ -16,7 +16,7 @@
             $staff_code=htmlspecialchars($staff_code,ENT_QUOTES,'UTF-8');
 
             //データベースに接続する
-            $dsn='mysql:dbname=shop2;host=localhost;charset=utf8';
+            $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
             $user='root';
             $password='';
             $dbh=new PDO($dsn,$user,$password);
